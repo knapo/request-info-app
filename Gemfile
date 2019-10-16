@@ -4,3 +4,6 @@ ruby "2.6.5"
 
 gem "rack"
 gem "puma"
+
+gem "a9n"
+gem "vidar"

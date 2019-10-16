@@ -1,17 +1,29 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    a9n (0.8.2)
+    colorize (0.8.1)
+    faraday (0.17.0)
+      multipart-post (>= 1.2, < 3)
+    multipart-post (2.1.1)
     nio4r (2.5.2)
     puma (4.2.1)
       nio4r (~> 2.0)
     rack (2.0.7)
+    thor (0.20.3)
+    vidar (0.6.0)
+      colorize
+      faraday
+      thor (~> 0.20)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  a9n
   puma
   rack
+  vidar
 
 RUBY VERSION
    ruby 2.6.5p114
