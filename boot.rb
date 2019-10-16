@@ -3,4 +3,5 @@ require "bundler/setup"
 Bundler.require :default
 require "cgi"
 require "logger"
+require "json"
 LOGGER = ::Logger.new(STDOUT)

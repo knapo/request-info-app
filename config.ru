@@ -6,8 +6,7 @@ app = proc do |env|
   if req.post?
     LOGGER.info(req.body.read)
   end
-  info = "<html><body><code>#{CGI::escapeHTML(env.inspect)}</code></body></html>"
-  [ 200, {'Content-Type' => 'text/html'}, [info]]
+  [ 200, {'Content-Type' => 'application/json'}, [env.to_json]]
 end
 
 run app
